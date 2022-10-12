@@ -1,6 +1,8 @@
 import React from 'react';
 import Option from '../Options/Option';
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Question = ({ question }) => {
 
@@ -12,9 +14,9 @@ const Question = ({ question }) => {
             toast("Wrong answer.. Try Again");
         }
     }
-
     return (
         <div className='my-5'>
+            <ToastContainer />
             <div className='text-white card glass'>
                 <h1 className='my-5 font-semibold text-xl'>Question: <span>{question.question}</span></h1>
                 <div className="w-4/6 mx-auto my-5 grid grid-cols-2 gap-5">
