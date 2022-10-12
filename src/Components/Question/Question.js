@@ -31,7 +31,7 @@ const Question = ({ question }) => {
                         </svg></button>
                     </div>
                 </div>
-                <div className="w-4/6 mx-auto my-5 grid grid-cols-2 gap-5">
+                <div className="w-4/6 mx-auto my-5 grid lg:grid-cols-2 gap-5">
                     {
                         question.options.map(option => <Option key={option} option={option} handleOption={handleOption}></Option>)
                     }
