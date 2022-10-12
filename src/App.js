@@ -14,23 +14,23 @@ function App() {
       children: [
         {
           path: '/',
-          // loader: () => fetch('products.json'),
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home></Home>
         },
         {
-          path: 'orders',
+          path: 'statistics',
           // loader: productsAndCartLoader,
           element: <Statistics></Statistics>
         },
         {
-          path: 'inventory',
+          path: 'blog',
           element: <Blog></Blog>
         }
       ]
     }
   ])
   return (
-    <div>
+    <div className='App'>
       <RouterProvider router={router}></RouterProvider>
     </div>
   );
