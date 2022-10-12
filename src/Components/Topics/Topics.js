@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Topics = ({ topic, handleQuizBTN }) => {
+const Topics = ({ topic }) => {
     return (
         <div>
             <div className="card glass transition ease-in-out hover:scale-110 my-10">

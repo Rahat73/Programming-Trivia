@@ -1,3 +1,18 @@
+# Project : Programming Trivia
+# Live page link: programming-trivia.netlify.app
+
+# Project description  -------------------
+In this project I have implmented several react hooks, such as - useSate, useLoaderData etc. 
+useLoader data has been used to fetch data from API.
+useState has been use to handle states of variable.
+I have also used reactRouter functionalities to set the routes of each pages 
+to show the chsrts reCharts has been used.
+To render childs under the parent node <Outlet> has been used
+There are some components which similar in look different in data, So I designed componet accordingly without creating different components for different data.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
