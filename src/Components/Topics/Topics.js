@@ -8,6 +8,7 @@ const Topics = ({ topic, handleQuizBTN }) => {
                 <figure><img className='transition ease-in-out hover:scale-110' src={topic.logo} alt="car!" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">{topic.name}</h2>
+                    <p>Total questions: {topic.total}</p>
                     <div className="card-actions justify-end">
                         <Link to={`/quiz/${topic.id}`} className="btn btn-primary">Start quiz</Link>
                     </div>
