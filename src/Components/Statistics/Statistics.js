@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import {
     LineChart,
@@ -12,6 +12,9 @@ import {
 } from "recharts";
 
 const Statistics = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const topics = useLoaderData().data;
     console.log(topics[0])
     return (

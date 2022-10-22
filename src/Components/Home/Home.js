@@ -1,8 +1,12 @@
 import { useLoaderData } from 'react-router-dom';
 import Topics from '../Topics/Topics';
 import image from '../../../src/7167569.jpg'
+import { useEffect } from 'react';
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     const topics = useLoaderData().data;
 
     return (

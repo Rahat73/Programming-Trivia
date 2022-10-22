@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Option from '../Options/Option';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 const Question = ({ question }) => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const handleOption = (option) => {
         if (option === question.correctAnswer) {
