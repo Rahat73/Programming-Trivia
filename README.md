@@ -1,5 +1,6 @@
 # Project : Programming Trivia
-# Live page link: programming-trivia.netlify.app
+# Live page link: 
+https://programming-trivia.netlify.app/
 
 # Project description  -------------------
 In this project I have implmented several react hooks, such as - useSate, useLoaderData etc. 
